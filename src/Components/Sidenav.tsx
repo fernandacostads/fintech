@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Sidenav = () => {
-  return (
-    <div>Sidenav</div>
-  )
-}
+  return <div>Sidenav</div>;
+};
 
-export default Sidenav
+export default Sidenav;
