@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header";
 import Sidenav from "./Components/Sidenav";
+import Footer from "./Components/Footer";
+import HeaderBar from "./Components/HeaderBar";
 import { DataContextProvider } from "./Context/DataContext";
 import Resumo from "./Pages/Resumo";
 import Vendas from "./Pages/Vendas";
@@ -11,6 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <DataContextProvider>
+        <HeaderBar />
         <div className="container">
           <Sidenav />
           <main>
@@ -22,6 +25,7 @@ function App() {
             </Routes>
           </main>
         </div>
+        <Footer />
       </DataContextProvider>
     </BrowserRouter>
   );

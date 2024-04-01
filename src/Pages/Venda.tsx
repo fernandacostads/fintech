@@ -9,7 +9,7 @@ type VendaSemData = Omit<IVenda, "data">;
 const Venda = () => {
   const { id } = useParams();
   const { data, loading } = useFetch<VendaSemData>(
-    `https://data.origamid.dev/vendas/${id}`,
+    `https://data.origamid.dev/vendas/${id}`
   );
 
   if (loading === true) return <Loading />;
