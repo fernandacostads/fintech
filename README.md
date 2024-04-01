@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# ![Fintech](images/demo-0.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Fintech: Dashboard para Análise de Vendas
 
-Currently, two official plugins are available:
+<table>
+<tr>
+<td>
+ Fintech é uma solução de visualização de dados projetada para análise e monitoramento de vendas. É um Dashboard dinâmico e intuitiva que oferece uma visão geral e em tempo real das transações comerciais, fornecendo insights valiosos para empresas e profissionais do setor financeiro.
+</td>
+</tr>
+</table>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## Expanding the ESLint configuration
+Aqui está uma demonstração funcional: https://fernandacostads.github.io/fintech/
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![Fintech](images/demo.gif)
 
-- Configure the top-level `parserOptions` property like this:
+### Integração com API de Vendas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Os dados são da API da ORIGAMID e seguem como mostrado na imagem.
+# ![API](images/demo-5.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Filtro de venda
+
+![grafico](images/demo-1.png)
+
+
+### Lista de vendas por período e mês
+
+![grafico](images/demo-3.png)
+
+
+### Sidebar
+![grafico](images/demo-4.png)
+
+### Gráficos
+
+Os gráficos foram desenvolvidos a partir da lib Recharts.
+https://github.com/recharts/recharts
+
+![grafico](images/demo-2.png)
+
+
+## Desenvolvido com:
+
+- [React - Vite](https://vitejs.dev/) - Utilizei o Vite para criar uma aplicação React com TypeScript.
+- [NPM](https://npmjs.com) - Node package manager (npm).
+- [Recharts](https://github.com/recharts/recharts) - Lib para criar gráficos usando Typescript.                                                                           |
+
